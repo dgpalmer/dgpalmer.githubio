@@ -29,11 +29,11 @@ body {
 
 }
 .section__heading {
-  @apply text-4xl font-bold py-8 mt-4;
+  @apply text-4xl py-8 mt-4;
 }
 
 .section--heading .section__title {
-  @apply normal-case text-4xl md:text-5xl font-bold py-8;
+  @apply normal-case text-4xl md:text-5xl py-8;
 }
 
 .section--heading .section__image {
