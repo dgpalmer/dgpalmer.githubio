@@ -1,0 +1,143 @@
+---
+---
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  @apply font-mono;
+}
+.container {
+  @apply max-w-6xl mx-auto;
+}
+
+.section {
+  overflow: hidden;
+}
+
+.section__styles {
+  @apply flex flex-row w-full tracking-tight text-dWhite px-4 md:px-8 py-8 md:py-12;
+}
+
+.section:nth-child(even) .section__content {
+  @apply justify-items-end text-right;
+}
+
+.section__content {
+  @apply w-full lowercase;
+
+}
+.section__heading {
+  @apply text-4xl font-bold py-8 mt-4;
+}
+
+.section--heading .section__title {
+  @apply normal-case text-4xl md:text-5xl font-bold py-8;
+}
+
+.section--heading .section__image {
+  overflow: hidden;
+  position: relative;
+  @apply mx-auto -mt-8 h-40 w-56 md:float-right md:h-60 md:w-72 rounded-full  md:[shape-outside:circle(40%)];
+}
+
+.section--heading .section__image img {
+  color: transparent;
+  @apply absolute inset-0 h-full w-full object-cover;
+}
+
+
+.section__text {
+  @apply text-xl py-4;
+}
+.text__title {
+  @apply font-bold text-2xl;
+}
+
+.text__link {
+  text-decoration: dashed;
+  @apply font-bold text-xl hover:underline underline-offset-2;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  display: inline-flex;
+  border-width: 1px;
+  border-color: transparent;
+  @apply bg-black text-dWhite rounded-md tracking-tight justify-center;
+}
+
+.button--cv__sm {
+  @apply inline-flex md:hidden;
+}
+
+.button--cv__md {
+  @apply hidden md:inline-flex;
+}
+
+.button:active {
+  text-decoration: dashed;
+  text-underline-offset: 4px;
+  @apply active:border-dWhite active:underline active:active:text-white;
+}
+
+.button:hover {
+  text-decoration: dashed;
+  text-underline-offset: 4px;
+  @apply hover:border-dWhite hover:underline hover:active:text-white;
+}
+
+.text-header {
+}
+
+.header {
+  z-index: 11;
+  @apply bg-oscuror h-20 mb-12 sticky top-0 w-full;
+}
+
+.header .section {
+  @apply container items-center grid grid-cols-4 grid-rows-[auto_1fr] pr-4 md:pr-8
+}
+
+.nav__wrapper {
+  @apply w-full col-span-3 justify-items-end;
+}
+.nav__wrapper nav {
+  @apply flex gap-4;
+}
+
+.section--logo {
+  /*@apply items-center lg:col-span-1 lg:row-span-2;*/
+}
+
+.main {
+  @apply container relative flex flex-col mt-12 gap-y-12 divide-dWhite divide-y;
+}
+
+.footer {
+  @apply bg-oscuror relative bottom-0 w-full;
+}
+.footer .section {
+  @apply container flex-none text-dWhite px-4 md:px-8 py-8 items-center
+}
+.icon {
+  @apply w-8 h-8 md:w-10 md:h-10 fill-dWhite;
+}
+
+.footer--socials {
+  @apply flex flex-row flex-wrap justify-center gap-4 md:gap-x-6 text-sm font-medium text-center md:text-left
+}
+.footer--copyright {
+  @apply h-full items-center text-right;
+}
+.footer--styles {
+  @apply flex flex-row items-center justify-between gap-4 sm:flex-row text-dWhite
+}
+
+.section--resume {
+  @apply text-dWhite;
+}
+.section--resume .embed--resume {
+  padding: 2rem 0;
+}

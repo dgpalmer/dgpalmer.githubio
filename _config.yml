@@ -1,0 +1,17 @@
+title: Donovan Palmer
+email: donovan@donovanpalmer.net
+github: https://github.com/dgpalmer/
+linkedin: https://linkedin.com/in/donovanpalmer/
+spotify: https://linkedin.com/in/donovanpalmer/
+url: "http://www.donovanpalmer.net"
+baseurl: /dgpalmer.github.io
+
+plugins:
+  - jekyll-postcss
+
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+
+include: ["node_modules/tailwindcss"]
