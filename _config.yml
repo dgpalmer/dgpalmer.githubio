@@ -2,9 +2,8 @@ title: Donovan Palmer
 email: donovan@donovanpalmer.net
 github: https://github.com/dgpalmer/
 linkedin: https://linkedin.com/in/donovanpalmer/
-spotify: https://linkedin.com/in/donovanpalmer/
 url: "http://www.donovanpalmer.net"
-baseurl: /dgpalmer.github.io
+baseurl: ""
 
 plugins:
   - jekyll-postcss
