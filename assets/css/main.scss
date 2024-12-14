@@ -101,7 +101,7 @@ body {
 }
 
 .nav__wrapper {
-  @apply w-full col-span-1 md:col-span-3 justify-items-center md:justify-items-end pb-4 md:pb-0;
+  @apply w-auto mx-auto col-span-1 md:col-span-3 justify-items-center md:justify-items-end pb-4 md:pb-0;
 }
 .nav__wrapper nav {
   @apply flex gap-4;
