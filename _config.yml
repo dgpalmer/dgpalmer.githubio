@@ -2,11 +2,12 @@ title: Donovan Palmer
 email: donovan@donovanpalmer.net
 github: https://github.com/dgpalmer/
 linkedin: https://linkedin.com/in/donovanpalmer/
-url: "http://www.donovanpalmer.net"
+url: "https://www.donovanpalmer.net"
 baseurl: ""
 
 plugins:
   - jekyll-postcss
+  - jekyll-seo-tag
 
 sass:
   load_paths:
